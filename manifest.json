@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ShieldSense",
+  "version": "1.0",
+  "description": "AI-powered Chrome security assistant that blocks phishing, scans pages, explains privacy risks, and answers safety questions — all locally using Gemini Nano.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ShieldSense"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
+

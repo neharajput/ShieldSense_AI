@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShieldSense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🛡️ ShieldSense</h2>
+    <p class="subtitle">Your on-device AI for safe, private browsing</p>
+
+    <div class="input-section">
+      <input id="urlInput" type="text" placeholder="Enter a URL or ask a safety question..." />
+    </div>
+
+    <div class="button-section">
+      <button id="checkPhishing">Check Phishing (Enter URL)</button>
+      <button id="checkCurrentUrl">Check Current URL</button>
+      <button id="scanPage">Scan Page</button>
+      <button id="askSafety">Ask AI</button>
+    </div>
+
+    <div class="result" id="resultBox">
+      <p id="resultText">🪶 Results will appear here...</p>
+    </div>
+
+    <div class="trust-meter">
+      <div id="trustBar" class="trust-bar"></div>
+      <p id="trustLabel" class="trust-label"></p>
+    </div>
+
+    <footer>
+      <p class="footer-text">
+        Built with Chrome’s Gemini Nano AI · Runs 100% locally
+      </p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
